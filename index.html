@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>  Train Hard    </title>
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="icon" href="pics/fav.jpg" type="image" >
+</head>
+<body>
+<header class="header">
+		<img class="logo" src=pics/logo.jpg alt="logo" height="10%" width="10%">
+		<nav>
+			<ul class="nav_links">
+			<li><a href="#">Home</a></li>
+			<li><a href="Aboutus.html">About us</a></li>
+			<li><a href="Subscription.html">Subscription</a></li>
+			<li><a href="trainer.html">Coaches</a></li>
+			<li><a href="services.html">Services</a></li>
+			</ul>
+		</nav>
+</header><br><br><br><br><br><br><br>
+<div class="background_image">
+<img src=pics/bimage.jpg alt="logo" width="100%">
+</div>
+<br><br><br><br><br>
+<div>
+<h1 class="part2" >
+    <center>
+    Welcome   to   the   best   fitness   club
+    </center>
+</h1><br><br><br><br><br><br><br>
+</div>
+<div class="row">
+<div class="column">
+<img class="yo" src="pics/img2.jpg" alt="two people exercising" style="width:80%" >
+</div>
+<div class="column">
+<div class="column_dev">
+    <p class="part3"><br>We believe that everyone has the right to good health and fitness. We want to help you live a fit and healthy lifestyle! We do this by providng fitness lessons to you keeping your budget, lifestyle and fitness goals in mind. weight loss, weight gain, cardio, realaxation theropy at home and so much more are been provided here through online lessons. Our awesome team of fitness trainers and dieticiens are always keen to help, so please call us to discuss your needs.And because we know you’re busy, we cut through the science speak to give you the information you need quickly.<br><b><i> And we have faith that you can do it!</i></b></p></div>
+</div>
+</div>
+<br><br><br>
+	<h1>How can a website help you to stay fit?</h1><br><br><br>
+    <p class="hy">Well, We provides you a wide range of home exercise and activities by which you can stay fit and healthy. Moreover, we are provinding diet charts and recipies which helps you to <b>Gain</b> or <b>Loss</b> weight. In addition, we have a team of best Dieticiense who are 24/7 ready to help the customers. Most of them have been with some proffesional athletes like <b>vijender Kumar</b>, <b>Pawan Kumar</b> etc. Furthermore, we also provide videocall sessions to the customers for betterment of their exercise postures. Resultingly, we are best for you to stay fit and healthy at your home, so kindly contact us and share your problems like <b>obesity</b>, <b>under weight</b> etc. and we will surely help you to overcome these major issues.<br><br></p><br>
+        
+	<br><br><br><br><br><br><br><br><br><br>
+	<img class="fitimg" src=pics/fitness.jpg alt="fitness" width="100%">
+    <br><br><br><br>
+    <div id="sub">
+    
+	<section>
+		<p class="headafter">Famous Activities</p>
+	</section><br><br>
+	<div class="btn2">
+	<button type="button" onclick="window.location.href = 'personaltraining..html';" >Personal Training</button>
+	<button type="button" onclick="window.location.href = 'boxingtraining.html';" >Boxing Training</button> 
+	<button type="button" onclick="window.location.href = 'dietingsession.html';" >Dieting Sessions</button>
+	</div><br><br>
+	<div id="stepsId">
+  <ol><li id="li1"><b>Subscribe now to get 30% Discount on the total fees.</b></li></ol>
+    </div>
+	<p class="headafter"></p>
+	<div class="videos">
+	<video class="video" width="800" height="710" controls>
+    <source src="videos/video1.webm" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+        <br>
+	<video class="video" width="300" height="230" controls>
+    <source src="videos/video2.webm" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+        
+	<video class="video" width="300" height="230" controls>
+    <source src="videos/video3.webm" type="video/mp4">
+        
+    Your browser does not support the video tag.
+    </video>
+        <br>
+	<video class="video" width="300" height="230" controls>
+    <source src="videos/video4.webm" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    </div>
+        
+        
+        <center>
+	<div class="bmibox">
+	<p class="bmihead">Calculate your BMI</p>
+	<br><br>
+        
+        
+	<form name="bmiForm">
+	Your Weight(kg): <input type="text" name="weight" size="10"><br><br>
+        
+	Your Height(cm): <input type="text" name="height" size="10"><br><br>
+	<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br><br>
+	Your BMI is: <input type="text" name="bmi" size="10"><br><br>
+	This Means: <input type="text" name="meaning" size="25"><br><br>
+	<input type="reset" value="Reset" /><br><br>
+	</form>
+	</div>
+        </center>
+
+<hr width="75%" align="center">
+<p class="last">
+Contact Us
+</p>
+<p class="last2">
+0184-1442250, 0184-2343257<br>
+Mughal cenal, office number.296, Karnal<br>
+Haryana,India.
+</p>
+<div class="fit">
+<img src=pics/fb.png alt="fblogo" height="40" width="40" >
+<img src=pics/instagram.jpg alt="instalogo" height="40" width="40" >
+<img src=pics/twitter.png alt="instalogo" height="40" width="40" >
+</div>
+</body>
+    
+<script language="JavaScript">
+	function calculateBmi() {
+	var weight = document.bmiForm.weight.value
+	var height = document.bmiForm.height.value
+	if(weight > 0 && height > 0){	
+	var finalBmi = weight/(height/100*height/100)
+	document.bmiForm.bmi.value = finalBmi
+	if(finalBmi < 18.5){
+	document.bmiForm.meaning.value = "That you are too thin."
+	}
+	if(finalBmi > 18.5 && finalBmi < 25){
+	document.bmiForm.meaning.value = "That you are healthy."
+		}
+	if(finalBmi > 25){
+	document.bmiForm.meaning.value = "That you have overweight."
+	}
+	}
+	else{
+	alert("Please Fill in everything correctly")
+	}
+	}
+    
+    
+    var colors = ["blue", "yellow", "red", "green", "orange"]
+var currentColor = 0
+var lis = document.querySelectorAll("#stepsId li")
+function changeColor() {
+  --currentColor
+  if (currentColor < 0) currentColor = colors.length -1
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].style.color = colors[(currentColor +i) % colors.length]
+  }
+}
+setInterval(changeColor, 1000)
+	</script>
+</html>
